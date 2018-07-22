@@ -11,7 +11,7 @@ class RequDemoController extends Controller
         return view('request.index');
     }
 
-    public function confirm(Request $request) {
+    public function confirm(\App\Http\Requests\ValiDemoRequest $request) {
         $data = $request->all();
         return view('request.confirm')->with($data);
     }

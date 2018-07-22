@@ -19,6 +19,10 @@ Route::get('/users/list', function () {
     return view('users/list');
 });
 
+Route::get('/layouts/layout', function () {
+    return view('layouts/layout');
+});
+
 # 入力画面
 Route::get('request/', [
     'uses' => 'RequDemoController@getIndex',
@@ -32,13 +36,37 @@ Route::post('request/confirm', [
 ]);
 
 # 入力画面
-Route::get('validation/', [
-    'uses' => 'ValiDemoController@getIndex',
-    'as' => 'validation.index'
+Route::get('insert/', [
+    'uses' => 'InsertDemoController@getIndex',
+    'as' => 'insert.index'
 ]);
 
 # 確認画面
-Route::post('validation/confirm', [
-    'uses' => 'ValiDemoController@confirm',
-    'as' => 'validation.confirm'
+Route::post('insert/confirm', [
+    'uses' => 'InsertDemoController@confirm',
+    'as' => 'insert.confirm'
+]);
+
+# 完了画面
+Route::post('insert/finish', [
+  'uses' => 'InsertDemoController@finish',
+  'as' => 'insert.finish'
+]);
+
+# 入力画面
+Route::get('mail/', [
+    'uses' => 'MailDemoController@getIndex',
+    'as' => 'mail.index'
+]);
+
+# 確認画面
+Route::post('mail/confirm', [
+    'uses' => 'MailDemoController@confirm',
+    'as' => 'mail.confirm'
+]);
+
+# 完了画面
+Route::post('mail/finish', [
+  'uses' => 'MailDemoController@finish',
+  'as' => 'mail.finish'
 ]);
