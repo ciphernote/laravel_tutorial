@@ -38,7 +38,7 @@
         @foreach ($uploaders as $uploader)
             <tr>
                 <td>{{ $uploader->username }}</td>
-                <td><img src="{{ "/img/" . $uploader->id . "/thum.jpeg" }}" width="150"/></td>
+                <td><img src="{{ $uploader->pic_thum() }}" width="150"/></td>
             </tr>
         @endforeach
     </tbody>
