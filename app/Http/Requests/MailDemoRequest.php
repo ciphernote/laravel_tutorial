@@ -24,6 +24,7 @@ class MailDemoRequest extends FormRequest
     public function rules() {
         return [
             //
+            'username'=>'required',
             'title'=>'required',
             'email'=>'required|email',
             'body'=>'required|max:100'

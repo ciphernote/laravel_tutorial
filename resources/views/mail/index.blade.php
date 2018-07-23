@@ -7,6 +7,13 @@
 
 <form action="{{ route('mail.confirm') }}" method="post" class="form-horizontal">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <div class="form-group @if($errors->has('username')) has-error @endif">
+        <label class="col-sm-2 control-label" for="username">名前：</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="username" name="username" placeholder="お名前を入力してください" value="{{ old('username') }}">
+            @if($errors->has('username'))<span class="text-danger">{{ $errors->first('username') }}</span> @endif
+        </div>
+    </div>
     <div class="form-group @if($errors->has('title')) has-error @endif">
         <label class="col-sm-2 control-label" for="title">件名：</label>
         <div class="col-sm-10">

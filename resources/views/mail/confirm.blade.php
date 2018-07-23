@@ -9,10 +9,15 @@
 
 <form action="{{ route('mail.finish') }}" method="post" class="form-horizontal">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+    <input type="hidden" name="username" value="{{$username}}">
     <input type="hidden" name="title" value="{{$title}}">
     <input type="hidden" name="email" value="{{$email}}">
     <input type="hidden" name="body" value="{{$body}}">
 
+    <div class="row">
+        <label class="col-sm-2 control-label" for="username">名前：</label>
+        <div class="col-sm-10">{{$username}}</div>
+    </div>
     <div class="row">
         <label class="col-sm-2 control-label" for="title">件名：</label>
         <div class="col-sm-10">{{$title}}</div>
