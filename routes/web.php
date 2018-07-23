@@ -70,3 +70,21 @@ Route::post('mail/finish', [
   'uses' => 'MailDemoController@finish',
   'as' => 'mail.finish'
 ]);
+
+# 入力画面
+Route::get('uploader/', [
+    'uses' => 'UploaderDemoController@getIndex',
+    'as' => 'uploader.index'
+]);
+
+# 確認画面
+Route::post('uploader/confirm', [
+    'uses' => 'UploaderDemoController@confirm',
+    'as' => 'uploader.confirm'
+]);
+
+# 完了画面
+Route::post('uploader/finish', [
+  'uses' => 'UploaderDemoController@finish',
+  'as' => 'uploader.finish'
+]);
