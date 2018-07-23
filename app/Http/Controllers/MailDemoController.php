@@ -25,7 +25,7 @@ class MailDemoController extends Controller
     {
         $data = $request->all();
         Mail::send('mail.temp', $data, function($message) use($data){
-            $message->to($data["email"])->subject('$data["title"]');
+            $message->to($data["email"])->subject($data["title"]);
         });
         return view('mail.finish');
     }
