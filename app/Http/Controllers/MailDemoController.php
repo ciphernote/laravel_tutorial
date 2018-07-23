@@ -25,7 +25,7 @@ class MailDemoController extends Controller
     {
         $data = $request->all();
         Mail::send('mail.temp', $data, function($message) use($data){
-            $message->to($data["email"])->subject("【自動配信メール】お問い合わせありがとうございます");
+            $message->to($data["email"])->subject("test");
         });
         return view('mail.finish');
     }
