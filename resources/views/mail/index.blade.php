@@ -1,5 +1,5 @@
 @extends('layouts.master_mail')
-@section('title', 'Laravel チュートリアル（初級）')
+@section('title', 'Laravel チュートリアル')
 
 @section('content')
 <h3>お問い合わせフォーム（デモ）</h3>

@@ -1,5 +1,5 @@
 @extends('layouts.master_uploader')
-@section('title', 'Laravel チュートリアル（初級）')
+@section('title', 'Laravel チュートリアル')
 
 @section('content')
 <h3>プロフィール画像</h3>

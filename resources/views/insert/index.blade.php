@@ -1,5 +1,5 @@
 @extends('layouts.master_insert')
-@section('title', 'Laravel チュートリアル（初級）')
+@section('title', 'Laravel チュートリアル')
 
 @section('content')
 <h3>従業員登録画面</h3>

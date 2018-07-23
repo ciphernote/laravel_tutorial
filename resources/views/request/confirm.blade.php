@@ -1,5 +1,5 @@
 @extends('layouts.master_request')
-@section('title', 'Laravelチュートリアル（初級）')
+@section('title', 'Laravelチュートリアル')
 
 @section('content')
 <h3>フォームサンプル（確認画面）</h3>
