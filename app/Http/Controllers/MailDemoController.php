@@ -28,7 +28,7 @@ var_dump(__LINE__);
 var_dump(__LINE__);
         Mail::send('mail.temp', $data, function($message) use($data){
 var_dump(__LINE__);
-            $message->to($data["email"])->subject('【自動配信メール】お問い合わせありがとうございます');
+            $message->to($data["email"])->subject("【自動配信メール】お問い合わせありがとうございます");
 var_dump(__LINE__);
         });
 var_dump(__LINE__);
