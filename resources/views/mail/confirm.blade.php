@@ -14,25 +14,25 @@
     <input type="hidden" name="email" value="{{$email}}">
     <input type="hidden" name="body" value="{{$body}}">
 
-    <div class="row">
+    <div class="form-group">
         <label class="col-sm-2 control-label" for="username">名前：</label>
         <div class="col-sm-10">{{$username}}</div>
     </div>
-    <div class="row">
+    <div class="form-group">
         <label class="col-sm-2 control-label" for="title">件名：</label>
         <div class="col-sm-10">{{$title}}</div>
     </div>
-    <div class="row">
+    <div class="form-group">
         <label class="col-sm-2 control-label" for="email">Email：</label>
         <div class="col-sm-10">{{$email}}</div>
     </div>
-    <div class="row">
+    <div class="form-group">
         <label class="col-sm-2 control-label" for="body">内容：</label>
         <div class="col-sm-10">{{$body}}</div>
     </div>
-    <div class="row">
+    <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10 text-center">
-            <input type="submit" name="button1" value="送信" class="btn btn-primary btn-wide" />
+            <input type="submit" name="button1" value="送信" class="btn btn-embossed btn-primary btn-wide" />
         </div>
     </div>
 </form>

@@ -7,6 +7,6 @@
 
 <div class="alert alert-success" role="alert">お問い合わせ内容を送信しました！</div>
 <div class="text-center">
-    <a href="{{ route('mail.index')}}" class="btn btn-embossed btn-primary">TOPへ</a>
+    <a href="{{ route('mail.index')}}" class="btn btn-embossed btn-primary btn-wide">TOPへ</a>
 </div>
 @endsection
