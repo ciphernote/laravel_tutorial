@@ -23,8 +23,8 @@
         </div>
     </div>
     <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10 text-center">
-            <input type="submit" name="button1" value="確認" class="btn btn-primary btn-wide" />
+        <div class="col-sm-offset-4 col-sm-8 text-center">
+            <input type="submit" name="button1" value="確認" class="btn btn-embossed btn-primary btn-wide" />
         </div>
     </div>
 </form>

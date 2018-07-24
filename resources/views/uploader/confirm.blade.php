@@ -21,8 +21,8 @@
         <div class="col-sm-8"><img src="{{$thum}}" width="150"/></div>
     </div>
     <div class="row">
-        <div class="col-sm-offset-2 col-sm-10">
-            <input type="submit" name="button1" value="登録" class="btn btn-primary btn-wide" />
+        <div class="col-sm-offset-4 col-sm-8 text-center">
+            <input type="submit" name="button1" value="登録" class="btn btn-embossed btn-primary btn-wide" />
         </div>
     </div>
 </form>
