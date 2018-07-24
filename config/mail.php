@@ -29,8 +29,7 @@ return [
     |
     */
 
-    //'host' => env('MAIL_HOST', 'smtp.mailtrap.io'),
-    'host' => env('MAIL_HOST', 'smtp.mail.yahoo.co.jp'),
+    'host' => env('MAIL_HOST', 'smtp.mailtrap.io'),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,8 +42,7 @@ return [
     |
     */
 
-    //'port' => env('MAIL_PORT', 2525),
-    'port' => env('MAIL_PORT', 465),
+    'port' => env('MAIL_PORT', 2525),
 
     /*
     |--------------------------------------------------------------------------
@@ -58,10 +56,8 @@ return [
     */
 
     'from' => [
-        //'address' => env('MAIL_FROM_ADDRESS', 'from@example.com'),
-        //'name' => env('MAIL_FROM_NAME', 'Example'),
-        'address' => env('MAIL_FROM_ADDRESS', 'shimo_imjp@yahoo.co.jp'),
-        'name' => env('MAIL_FROM_NAME', 'Information_Mail'),
+        'address' => env('MAIL_FROM_ADDRESS', 'from@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*
@@ -75,8 +71,7 @@ return [
     |
     */
 
-    //'encryption' => env('MAIL_ENCRYPTION', 'null'),
-    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+    'encryption' => env('MAIL_ENCRYPTION', 'null'),
 
     /*
     |--------------------------------------------------------------------------
@@ -89,10 +84,8 @@ return [
     |
     */
 
-    //'username' => env('MAIL_USERNAME', '34dd558cd23cab'),
-    //'password' => env('MAIL_PASSWORD', 'eb53aa75ba650c'),
-    'username' => env('MAIL_USERNAME', 'shimo_imjp'),
-    'password' => env('MAIL_PASSWORD', 'yU4f_VHX'),
+    'username' => env('MAIL_USERNAME', '34dd558cd23cab'),
+    'password' => env('MAIL_PASSWORD', 'eb53aa75ba650c'),
 
     /*
     |--------------------------------------------------------------------------
