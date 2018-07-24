@@ -12,15 +12,15 @@
     <input type="hidden" name="username" value="{{$username}}">
     <input type="hidden" name="thum" value="{{$thum}}">
 
-    <div class="row">
+    <div class="form-group">
         <label class="col-sm-4 control-label" for="username">名前：</label>
         <div class="col-sm-8">{{$username}}</div>
     </div>
-    <div class="row">
+    <div class="form-group">
         <label class="col-sm-4 control-label" for="thum">サムネイル画像：</label>
         <div class="col-sm-8"><img src="{{$thum}}" width="150"/></div>
     </div>
-    <div class="row">
+    <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10 text-center">
             <input type="submit" name="button1" value="登録" class="btn btn-embossed btn-primary btn-wide" />
         </div>
