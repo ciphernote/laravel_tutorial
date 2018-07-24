@@ -15,9 +15,10 @@
         </div>
     </div>
     <div class="form-group @if($errors->has('thum')) has-error @endif">
-        <label class="col-sm-4 control-label" for="thum">サムネイル画像<br>JPG ONLY：</label>
+        <label class="col-sm-4 control-label" for="thum">サムネイル画像：</label>
         <div class="col-sm-6">
             <input type="file" id="thum" name="thum" size="50" value="{{ old('thum') }}">
+            <span class="text-muted">※ 横幅最大600px、画像サイズ最大1MB、PNG/JPG/GIF 可能<br></span>
             @if($errors->has('thum'))<span class="text-danger">{{ $errors->first('thum') }}</span> @endif
         </div>
     </div>

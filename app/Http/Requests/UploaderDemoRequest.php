@@ -34,7 +34,7 @@ class UploaderDemoRequest extends FormRequest
             //
             "required" => "必須項目です。",
             "image" => "指定されたファイルが画像ではありません。",
-            "mines" => "指定された拡張子（PNG/JPG/GIF）ではありません。",
+            "mimes" => "指定された拡張子（PNG/JPG/GIF）ではありません。",
             "max" => "画像サイズが1MBを超えています。",
             "dimensions" => "画像の横幅は最大600pxです。",
         ];
