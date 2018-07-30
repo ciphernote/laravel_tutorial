@@ -90,7 +90,7 @@ Route::post('uploader/finish', [
 ]);
 
 # 一覧画面
-Route::get('student/list', [
+Route::get('student', [
     'uses' => 'StudentController@getIndex',
     'as' => 'student.list'
 ]);

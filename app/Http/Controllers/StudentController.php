@@ -52,7 +52,7 @@ class StudentController extends Controller
         $student->save();
 
         // 一覧にリダイレクト
-        return redirect()->to('student/list');
+        return redirect()->to('student');
     }
 
     // 編集画面
@@ -81,7 +81,7 @@ class StudentController extends Controller
         $student->save();
 
         //リダイレクト
-        return redirect()->to('student/list');
+        return redirect()->to('student');
     }
 
     // 削除画面
@@ -91,6 +91,6 @@ class StudentController extends Controller
         //削除
         $user->delete();
         //リダイレクト
-        return redirect()->to('student/list');
+        return redirect()->to('student');
     }
 }
